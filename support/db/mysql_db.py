@@ -17,6 +17,7 @@ class DBConnection(object):
         self.db_source_write = dbs_write
         self.cf_read = config_tool.get_db_conf(self.db_source_read)
         self.cf_write = config_tool.get_db_conf(self.db_source_write)
+        print self.cf_read
 
         try:  # 读连接
             self.conn_read = pymysql.connect(host=self.cf_read['host'],
