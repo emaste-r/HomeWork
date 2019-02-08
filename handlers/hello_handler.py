@@ -7,4 +7,5 @@ class HelloHandler(MethodView):
 
     def get(self):
         print "hello world..."
+
         return "hello world..."
